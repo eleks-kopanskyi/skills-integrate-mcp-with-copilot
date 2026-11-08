@@ -24,6 +24,44 @@ header {
   border-radius: 5px;
 }
 
+header #auth-panel {
+  max-width: 360px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+header #auth-panel .form-group {
+  margin-bottom: 10px;
+}
+
+header #auth-panel label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+header #auth-panel input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+header #account-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+header #account-info.hidden {
+  display: none;
+}
+
+header #auth-message {
+  margin-top: 8px;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
