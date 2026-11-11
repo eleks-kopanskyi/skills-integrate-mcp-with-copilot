@@ -10,6 +10,24 @@
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <section id="auth-panel" aria-label="Account">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="username" name="username" autocomplete="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+          <button type="submit">Sign in</button>
+        </form>
+        <div id="account-info" class="hidden">
+          <p id="account-name"></p>
+          <button id="logout-button" type="button">Sign out</button>
+        </div>
+        <p id="auth-message" role="status" aria-live="polite"></p>
+      </section>
     </header>
 
     <main>
@@ -23,11 +41,7 @@
 
       <section id="signup-container">
         <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
-          </div>
+        <form id="signup-form" class="hidden">
           <div class="form-group">
             <label for="activity">Select Activity:</label>
             <select id="activity" required>
@@ -37,6 +51,7 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
+        <p id="role-message">Sign in to manage activity signups.</p>
         <div id="message" class="hidden"></div>
       </section>
     </main>
